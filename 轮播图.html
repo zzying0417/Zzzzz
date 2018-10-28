@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 882px;
+            height: 86px;
+            overflow: hidden;
+            margin: 100px auto;
+			border: 1px solid red;
+        }
+        .container img{
+            float: left;
+        }
+        .container{
+            width: 1764px;
+            height: 86px;
+            animation: move 3s linear infinite;
+        }
+        .box:hover .container{
+            animation-play-state: paused;
+        }
+
+        @keyframes move{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-882PX)
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>
